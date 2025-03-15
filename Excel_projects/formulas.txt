@@ -1,0 +1,16 @@
+生成指定行数随机入库单号
+=TEXT(RANDARRAY(225,1,100000000000,999999999999,TRUE), "0")
+
+生成指定行数随机合同编号
+=LET(
+  numRows, 225,
+  randNums, RANDBETWEEN(SEQUENCE(numRows, 1, 0, 0), 999),
+  "ABCD202x-" & TEXT(randNums, "000")
+)
+
+生成指定行数随机金额（合同金额与凭证金额）
+=INT(RANDARRAY(225, 1, 10000, 999999, TRUE))
+
+检查函数有效性
+=IFERROR(IF(VLOOKUP(A3, 凭证信息!A:C, 3, FALSE)<>C3, "差异", ""), "")
+=IFERROR(IF(VLOOKUP(A3, 凭证信息!$B$3:$C$227, 1, FALSE)<>C3, "差异", ""), "")
