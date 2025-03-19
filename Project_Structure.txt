@@ -1,0 +1,23 @@
+.
+|-- Excel_projects
+|   |-- Conditional Format Settings.png
+|   |-- DiscrepancyScreening-Template.jpg
+|   |-- Outcome_1.png
+|   |-- Outcome_2.png
+|   |-- data_demonstration_1.csv
+|   |-- data_demonstration_2.csv
+|   `-- formulas.txt
+|-- Modeling
+|   |-- descriptive_stats.pdf
+|   |-- stat.RegressionAnalysis.sav
+|   `-- stat.Values.sav
+|-- Project_Structure.txt
+|-- Python_projects
+|   |-- code_Auditing.py
+|   `-- code_Excel.py
+|-- README.md
+`-- images
+    |-- my-notion-face-transparent.webp
+    `-- my-notion-face.png
+
+4 directories, 16 files
